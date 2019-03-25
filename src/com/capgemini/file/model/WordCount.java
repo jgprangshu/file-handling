@@ -28,11 +28,11 @@ public class WordCount {
 		
 		while((lineCount= bufferedReader.readLine())!= null) {
 			if(!(lineCount.equals(""))) {
-				String[] wordList = lineCount.split(" ");
+				String[] wordList = lineCount.split("[ ]+");           
 				count +=wordList.length;
 				
 			}
-		}
+		} 
 		bufferedReader.close();
 		fileReader.close();
 		return count;

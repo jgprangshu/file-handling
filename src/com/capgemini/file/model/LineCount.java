@@ -12,12 +12,11 @@ public class LineCount {
 
 	public LineCount() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public LineCount(String path) throws FileNotFoundException {
 		this.path = path;
-		fileReader = new FileReader(path);
+		FileReader fileReader = new FileReader(path);
 		bufferedReader = new BufferedReader(fileReader);
 	}
 
